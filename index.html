@@ -4,10 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<title>Becoming Friends with Cassandra</title>
+		<meta name="description" content="Just a wee OSCON workshop on the world of Cassandra's Architecture and Data Modeling">
+		<meta name="author" content="Dani Traphagen w/Jon Haddad on Sparkiliciousness">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,339 +40,389 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>Becoming Friends w/Cassandra</h1>
+					<a href="#">
+						<img width="370" height="200" data-src="https://s.yimg.com/ea/img/-/140604/8._friendship_bracelets_19otk2t-19otk5f.jpg?x=450&q=80&n=1&sig=bYI36DYhNpFEUtF45fxymw--" alt="Friendship">
+					</a>
+					<h5>The totally radical, scalable, blissful database & your new BFF!</h5>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Created by <a href="http://dtrapezoid.com">Dani Traphagen</a> / <a href="http://twitter.com/dtrapezoid">@dtrapezoid</a></small>
+						<small>with fellow Cassandra BFF<a href="http://rustyrazorblade.com">Jon Haddad</a> / <a href="http://twitter.com/rustyrazorblade">@rustyrazorblade</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
+					<h2>Who even are these people?</h2>
+					<a href="#">
+						<img width="480" height="500" data-src="https://pbs.twimg.com/profile_images/555812979187265536/uFbfp2q1.jpeg" alt="Me">
+					</a>
+					<h5>This is Jon!</h5>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
+					<h2>Who even are these people?</h2>
+					<a href="#">
+						<img width="375" height="500" data-src="https://scontent.fsnc1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/19719_345000805694155_8367723966019659195_n.jpg?oh=abcfe6bd6b8df2434f79e47fa00df65d&oe=5611CB00" alt="Jon">
+					</a>
+					<h5>Hai, I'm Dani!</h5>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
+					<h2>Agenda</h2>
 					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
+						<p><span class="fragment highlight-blue">1:30pm-2:15pm Presentation and VM setup</span></p>
+						<p><span class="fragment highlight-blue">2:15pm-3pm: Architecture/Data Modeling Exercises</span></p>
+						<p><span class="fragment highlight-blue">3pm-3:30pm Break</span></p>
+						<p><span class="fragment highlight-blue">3:30pm-5pm Jon shows you how to Spark!</span></p>
 					</ol>
+					<aside class="notes">
+						1. ACID is at it’s core, idealistc. Why? 2. Trying to be that consistent across a system where there can be power failures, a neighbor next door in the cloud trading bitcoin, gc pauses, downed servers is asking to fail at some point.
+						3. Now when trying to achieve this at scale, we’re asking for more trouble because we’re just adding to our probability of failure.
+						4. So what is our answer?
+						Asynchronous replication/eventual consistency
+					</aside>
+				</section>
+
+				<section data-transition="slide" data-background="#7777CC" data-background-transition="zoom">
+						<section id="fragments">
+						<h1>Setup TIME!</h1>
+				</section>
+
+						<section id="fragments">
+						<a href="#">
+							<img width="150" height="150" data-src="http://justcoachit.com/blog/wp-content/uploads/2011/06/boxing-glove-thru-computer-screen.jpg" alt="boxing">
+						</a>
+						<ol>
+						<h5>For the VirtualBoxers</h5>
+							<span class="fragment"><li>Use the force...er...flash drive!</span></p></li>
+							<span class="fragment"><li>Download the VM zip file “OSCON Cassandra Workshop.zip” to your VMs directory</li></p>
+							<span class="fragment"><li>Unzip the file in your terminal if you fancy:</li></p>
+							<span class="fragment"><li><b><code>tar -zxvf OSCON\ CASSANDRA\ WORKSHOP.zip</code></b></li></p>
+						</ol>
+					</section>
+
+						<section id="fragments">
+						<a href="#">
+							<img width="150" height="150" data-src="http://justcoachit.com/blog/wp-content/uploads/2011/06/boxing-glove-thru-computer-screen.jpg" alt="boxing">
+						</a>
+						<ol>
+						<h5>For the VirtualBoxers cont.</h5>
+							<span class="fragment"><li><b><code>cd OSCON\ Cassandra\ Workshop\</code></b></li></p>
+							<span class="fragment"><li><b><code>open . </code></b></li></p>
+							<span class="fragment"><li>Double click on the <b><code>OSCON Cassandra Workshop.vbox</code></b> file</li></p>
+							<span class="fragment"><li>OSCON Cassandra Workshop should add to the Virtual Box list</li></p>
+							<span class="fragment"><li>Double click to start it up!</li></p>
+						</ol>
+						</section>
+
+						<section id="fragments">
+						<a href="#">
+							<img width="120" height="150" data-src="http://wanderingstan.com/otherpics/okinawa/Stan%20Okinawa.jpg" alt="boxing">
+						</a>
+						<ol>
+						<h5>For the VMwarers</h5>
+							<span class="fragment"><li>Unzip the file how you do</li></p>
+							<span class="fragment"><li>In VMWare<b>File > Open</b> and find the <code><b>OSCON Cassandra Workshop.vmx</b></code> file</li></p>
+							<span class="fragment"><li>From the command line -- In the folder where you installed the Workstation you can run <b><code>vmrun start</code></b>, with the path to the .vmx file if vmrun is installed</li></p>
+							<span class="fragment"><li>OSCON Cassandra Workshop should start up</li></p>
+						</ol>
+						</section>
+					</section>
+
+				<section>
+					<section>
+						<h2>The RDBMS Rabbit Hole</h2>
+						<p>Seems like a good idea...</p>
+						<p>Until you realize your data is often <em>late</em> for a very important date.</p>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="450" height="300" data-src="http://www.bettinahorvath.com/var/01_Down_the_Rabbit_Hole-600x400.jpg" alt="Rabbit Hole">
+						</a>
+					</section>
+				</section>
+
+					<section>
+						<h2>Why do RDBMS suck?</h2>
+						<p>They used to be so cool...</p>
+						<a href="#" class="navigate-down">
+							<img width="300" height="425" data-src="http://www.rad-dudes.com/wp-content/uploads/2009/10/pwciekd8nlrz73lm3t1obfulo1_500.jpg" alt="Lil Vacuum Bro">
+						</a>
+					</section>
+
+					<section>
+						<h2>The world has changed!</h2>
+						<a href="#" class="navigate-down">
+							<img width="650" height="425" data-src="http://www.empowher.com/sites/default/files/herarticle/teens-cellphones.jpg" alt="Smartphone Overlords">
+						</a>
+					</section>
+
+				<section>
+						<h2>Has it loaded yet?</h2>
+						<p><q> "Screw this app I'm just going to use Instagram!"</q> - Every teenager ever.</p>
+						<a href="#" class="navigate-down">
+							<img width="600" height="400" data-src="http://v2.study-india.co.in/sites/default/files//BoredTeenager650.jpg" alt="They get bored quick!">
+						</a>
 				</section>
 
 				<section>
-					<h2>Tabular Tables</h2>
+					<h2>Yeah, so what...</h2>
+					<a href="#" class="navigate-down">
+						<img width="300" height="200" data-src="http://i.imgur.com/WdtOUOb.jpg" alt="LilBub likes ACID!">
+					</a>
+					<p>
+				 	I <i>need</i> the ACID guarantee!
+					</p>
+					<ol>
+						<p><span class="fragment highlight-blue">ACID is idealistic.</span></p>
+						<p><span class="fragment highlight-blue">Entropy is a thing!</span></p>
+						<p><span class="fragment highlight-blue">Can you really scale?</span></p>
+						<p><span class="fragment highlight-blue">Is there a better way?</span></p>
+					</ol>
+					<aside class="notes">
+						1. ACID is at it’s core, idealistc. Why? 2. Trying to be that consistent across a system where there can be power failures, a neighbor next door in the cloud trading bitcoin, gc pauses, downed servers is asking to fail at some point.
+						3. Now when trying to achieve this at scale, we’re asking for more trouble because we’re just adding to our probability of failure.
+						4. So what is our answer?
+						Asynchronous replication/eventual consistency
+					</aside>
+				</section>
+
+<!--Cassandra Architecture Introduction here-->
+
+	<section data-transition="slide" data-background="#7777CC" data-background-transition="zoom">
+							<h2>Meet Cassandra's Architecture!</h2>
+							<a href="#">
+								<img width="400" height="400" data-src="http://i.imgur.com/uWLp1f7.png" alt="Token Ring">
+							<a href="#">
+								<img width="400" height="400" data-src="http://i.imgur.com/MEkCDgJ.png" alt="CAP Theorem">
+							</a>
+							<aside class="notes">
+								1. Our answer is eventual consistency
+								2. has everyone heard of Brewer's CAP (tradeoff) theorem for Distributed Databases?
+								3. Explain the triangle: Consistency, Availablity and Partition Tolerance (pick 2)
+							</aside>
+							</section>
+
+						<section>
+						<h2>A Cassandra Cluster</h2>
+						<a href="#">
+							<img width="1800" height="475" data-src="http://i.imgur.com/kfopbkd.png" alt="C* Cluster">
+						</a>
+						</section>
+
+						<section>
+							<h2>But really we use Virtual Nodes...</h2>
+							<a href="#">
+								<img width="450" height="450" data-src="http://i.imgur.com/GM1YAbN.png" alt="Virtual Nodes">
+							</a>
+							<aside class="notes">
+								1. Virtual nodes help nodes bootstrap faster because the token range is distributed
+								2. The impact of a failure is spread across the cluster
+								3. The assignment is automated
+							</aside>
+						</section>
+
+						<section>
+						<h2>Replication Factor</h2>
+						<a href="#">
+							<img width="450" height="450" data-src="http://i.imgur.com/44d9jhF.png" alt="Replication Factor">
+						</a>
+						<aside class="notes">
+							1. How many nodes in the cluster get a copy of the data
+							2. For example, here is a write coming in, the RF says 3 nodes will get that write
+							3. The write is timestamped at every node as well. Every write indicates 3 things: name, value and timestamp.
+						</aside>
+						</section>
+
+						<section>
+						<h2>Consistency Level</h2>
+						<a href="#">
+							<img width="450" height="450" data-src="http://i.imgur.com/vdeuiLA.png" alt="Consistency Level">
+						</a>
+						<aside class="notes">
+							1. Our consistency level is the number of nodes that must acknowledge an operation was successful.
+							2. A CL can vary on a per request basis
+							3. The node highlighted with the client request coming in and is acting as a coordinator
+							4. Any node can be a coordinator for any request (it's like a free for all)
+							5. Therefore, a clident request can be coordinated by a different node
+							6. Take away is that there is no SPOF
+						</aside>
+						</section>
+
+	<section data-transition="slide" data-background="#7777CC" data-background-transition="zoom">
+							<h2>Meet Cassandra's Data Model!</h2>
+						</section>
+
+
+					<section>
+					<h2>All the Single <strike>Ladies</strike> Row Partitions</h2>
+					<a href="#" class="navigate-down">
+						<img width="300" height="200" data-src="http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/8/19/1408440593122/Beyonce-single-ladies-Gla-011.jpg" alt="Yonce!">
+					</a>
 					<table>
 						<thead>
 							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
+								<th>Name</th>
+								<th>Favorite Number</th>
+								<th>Favorite Food</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
+								<td>Beyonce</td>
+								<td>4</td>
+								<td>Burgers</td>
+							</tr>
 							<tr>
+								<td>Dani</td>
+								<td>5001</td>
+								<td>Kale</td>
+							</tr>
 							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
+								<td>Jon</td>
+								<td>10</td>
+								<td>Bacon</td>
+							</tr>
 						</tbody>
 					</table>
-				</section>
+					</section>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+					<section>
+					<h3>What does it look like to create and use a keyspace with C*'s query language? (CQL)</h3>
+					<pre><code data-trim contenteditable>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+create KEYSPACE demo WITH replication =
+	{‘class’: ‘SimpleStrategy’, ‘replication_factor’:1};
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+use demo ;
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
 					</code></pre>
+					</section>
+
+					<section>
+						<h3>What does it look like to create this table with C*'s query language? (CQL)</h3>
+						<pre><code data-trim contenteditable>
+							cqlsh:demo> create table user
+	   (name text primary key, favorite_number int, favorite_food text);
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>What does it look like to query this table with CQL?</h3>
+						<pre><code data-trim contenteditable>
+							cqlsh:demo> select * from user WHERE name = 'Beyonce'
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>What does our output look like?</h3>
+						<pre><code data-trim contenteditable>
+
+cqlsh:demo> select * from user WHERE name = 'Beyonce'
+
+
+   name | favorite_number | favorite_food
+--------+-----------------+--------------
+Beyonce |        4        | Burgers
+
+
+						</code></pre>
+						<aside class="notes">
+							Now the cool thing about Beyonce is we always know where she is thanks to our partition/primary key being name, we don’t have to go looking for her everywhere
+							We don’t have to query all our nodes because you can query any node in the cluster, that node can act as a coordinator, which hashes Beyonce, knows where she is, retrieves her data and sends it back
+							(drive and token aware policy, so coordinator will know ring topology and go to the correct node with the data)
+						</aside>
+					</section>
 				</section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+	<section data-transition="slide" data-background="#7777CC" data-background-transition="zoom">
+					<h1>Now you try!</h1>
+	</section>
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+	<section>
+	<h2>ufos.txt</h2>
+	<h5>Scraped from <a href="http://www.ufocenter.com/reportformsubmit.html">NUFORC</a></h5>
+	<a href="#">
+		<img width="300" height="475" data-src="http://imgc.allpostersimages.com/images/P-473-488-90/65/6553/UNT4100Z/posters/the-x-files-i-want-to-believe-print.jpg" alt="I want to believe.">
+	</a>
+	</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+	<section>
+		<h2>Hackily scraped the data...</h2>
+
+<h5> To fix non printable characters, example shown is <8a> used in VI: </h5>
+<pre><code data-trim contenteditable>
+:%s/\x8a//g
+</code></pre>
+
+<h5> Deleting a range using VI, example: </h5>
+<pre><code data-trim contenteditable>
+:g /1900/01/00 /d
+</code></pre>
+
+<h5> To extract year from month and put each into separate columns w/Unix cut command: </h5>
+<pre><code data-trim contenteditable>
+cut -f 2,2 ufos.txt | cut -c 1-7 | more
+
+cut -f 2,2 ufos.txt | cut -c 1-7 | paste ufos.txt -
+
+cut -f 2,2 ufos.txt | cut -c 1-7 | paste ufos.txt - > ufos_with_year_month.txt
+</code></pre>
+
+<h5> You can also awk, sed and grep your heart out! OR write some sweet R and Python! </h5>
+
+		<aside class="notes">
+			There are a number of ways to skin this cat, I just added this slide for reference so you could see some of the funky things I did!
+			Full disclosure though people, there are far better ways to clean data.
+		</aside>
+	</section>
+
+
+	<section>
+		<h2>To Create the ufos Keyspace:</h2>
+<pre><code data-trim contenteditable>
+
+cqlsh> create KEYSPACE ufos WITH replication =
+{‘class’: ‘SimpleStrategy’, ‘replication_factor’:1};
+use ufos ;
+</code></pre>
+		<ol>
+			<li>Open your VM's shell</li>
+			<li>Do a quick <code>ls</code></li>
+			<li><code>cd</code> into <code>`ufo_data`</code></li>
+			<li><code>ls</code> again & get a lay of the land</li>
+			<li>Type <code>cqlsh</code></li> (& Get ready to use Cassandra's Query Language!)</li>
+			<li>Type the code blurb above to create the ufos keyspace!</li>
+
+
+		<aside class="notes">
+			So a little note here on SimpleStrategy and your RF. Obviously this isn't what you would do in production. In production, you'd
+			use NetworkTopologyStrategy and I'd venture to say your RF would be greater than 1 too, but we're just getting our hands dirty here.
+		</aside>
+	</section>
+
+	<section>
+		<h2>Head to the instructions and follow along!</h2>
+		<h5>Link to the instructions <a href="https://gist.github.com/dtrapezoid/42c13b7daba65cee03ef"> here</a> and if you get stuck, put a post-it note on the top corner of your open laptop.	</section>
+
+	<section>
+		<h2>How did that go?</h2>
+		<aside class="notes">
+			Primary key is split up into two parts, partition key columns and (optional) clustering columns. Partition key columns are the ones we want to query on (Searching for a particular city: Portland), and the clustering columns can also be queried, and also ordered (like our sighting_time).
+		</aside>
+	<section>
+
+	<section>
+		<h2>Shoutouts:</h2>
+		<h5>Major thanks to <a href="https://twitter.com/stevenlowenthal"> Steve Lowenthal</a> and <a href="https://twitter.com/joechu1"> Joe Chu</a> for their help!</h5>
+	</section>
+
+<section data-transition="slide" data-background="#7777CC" data-background-transition="zoom">
+		<h2>Now to Jon on how Spark and Cassandra work together!</h2>
+	</section>
+
+	<section data-transition="slide" data-background="#7777CC" data-background-transition="zoom">
+			<h2>THANKS for your attention!</h2>
+		</section>
 
 			</div>
 
