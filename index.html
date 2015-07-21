@@ -205,14 +205,14 @@
 						<section>
 						<h2>A Cassandra Cluster</h2>
 						<a href="#">
-							<img width="1800" height="475" data-src="http://i.imgur.com/kfopbkd.png" alt="C* Cluster">
+							<img width="1800" height="475" data-src="http://i.imgur.com/NSGtoNZ.png" alt="C* Cluster">
 						</a>
 						</section>
 
 						<section>
 							<h2>But really we use Virtual Nodes...</h2>
 							<a href="#">
-								<img width="450" height="450" data-src="http://i.imgur.com/GM1YAbN.png" alt="Virtual Nodes">
+								<img width="450" height="450" data-src="http://i.imgur.com/SID7euN.png" alt="Virtual Nodes">
 							</a>
 							<aside class="notes">
 								1. Virtual nodes help nodes bootstrap faster because the token range is distributed
@@ -408,6 +408,7 @@ use ufos ;
 		<h2>How did that go?</h2>
 		<aside class="notes">
 			Primary key is split up into two parts, partition key columns and (optional) clustering columns. Partition key columns are the ones we want to query on (Searching for a particular city: Portland), and the clustering columns can also be queried, and also ordered (like our sighting_time).
+			Main take away here is: our partition key is where the data sits on the hash ring, clustering keys determine row ordering in the partition. They are physically stored in order on disk, they give us order and they make range queries easy.
 		</aside>
 	</section>
 
@@ -421,7 +422,10 @@ use ufos ;
 	</section>
 
 	<section data-transition="slide" data-background="#7777CC" data-background-transition="zoom">
-			<h2>THANKS for your attention!</h2>
+			<h2>Thanks for your attention!</h2>
+			<a href="#">
+				<img width="400" height="275" data-src="http://www-tc.pbs.org/wgbh/nova/assets/img/posters/aliens-milky-way-in.jpg" alt="Ayyy">
+			</a>
 		</section>
 
 			</div>
